@@ -1,0 +1,39 @@
+// Slider Component
+// ===
+
+$small-slider: 40vh;
+$large-slider: 60vh;
+
+.slider {
+    height: $small-slider;
+
+    opacity: 0;
+
+    transform: translate3d(0, $large-slider, 0);
+
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+
+    user-select: none;
+
+    .js-view-init & {
+        opacity: 1;
+    }
+
+    .js-move-items & {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.js-view-full .flickity-viewport {
+    overflow: visible;
+}
+
+
+@media screen and (max-height: 35em) {
+    .slider {
+        height: $large-slider;
+
+        transform: translate3d(0, $small-slider, 0);
+    }
+}

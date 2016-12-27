@@ -1,0 +1,11 @@
+footer(hidden='')
+
+        h2.footer-heading {{ site.title }}
+        .footer-col-wrapper
+            .footer-col.footer-col-1
+                ul.contact-list
+                    li {{ site.title }}
+                    li
+                        a(href='mailto:{{ site.email }}') {{ site.email }}
+            .footer-col.footer-col-3
+                p {{ site.description }}

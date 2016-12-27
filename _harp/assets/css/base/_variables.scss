@@ -1,0 +1,49 @@
+// Global Variables
+// ===
+
+
+// Size Variables
+// ---
+
+$unit: 1rem;
+
+
+// Type Variables
+// ---
+
+$base-font-family: 'Ingra', sans-serif;
+
+$very-small-font-size: $unit*0.5;
+$small-font-size: $unit*0.75;
+$base-font-size: $unit;
+$large-font-size: $unit*1.25;
+$very-large-font-size: $unit*1.5;
+
+$base-line-height: 1;
+$paragraph-line-height: $base-line-height*1.5;
+
+$base-font-weight: 300;
+$bold-font-weight: 700;
+
+
+// Colour Variables
+// ---
+
+$black: #111;
+$white: #fff;
+$pink: #fe0390;
+
+
+// Style Variables
+// ---
+
+$border-radius: $unit / 4;
+
+
+// Z Axis
+// ---
+
+$z1-depth: 1;
+$z2-depth: 10;
+$z3-depth: 100;
+$z4-depth: 1000;

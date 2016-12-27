@@ -1,0 +1,10 @@
+// loader
+// ===
+
+.loader {
+    transform: translate(-50%, -50%) scale(2);
+
+    .js-view-init & {
+        display: none;
+    }
+}

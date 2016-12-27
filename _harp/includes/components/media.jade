@@ -1,0 +1,17 @@
+mixin media(image, title, date, number, description)
+
+    article.item.u-context.u-full-width.u-text-left
+        div.item__content.u-context.u-z3
+
+            div.item__image.u-clip
+                img.u-context.u-z3.u-block.u-full-width(src='#{image}', alt='#{title}')
+
+            h3.u-margin-top.u-flexbox.u-align-middle
+                span.u-text-size-large #{title}
+                span.u-text-size-small.u-block.u-margin-start.u-half-transparent #{date}
+
+            div.item__details.u-position.u-t-0.u-z4
+                ul.c-text-content
+                    li.u-block.u-bold.u-margin-bottom #{number}
+                    li.u-block
+                        | #{description}

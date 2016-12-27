@@ -1,0 +1,163 @@
+.flickity-enabled {
+    position: relative;
+}
+
+.flickity-enabled:focus {
+    outline: none;
+}
+
+.flickity-viewport {
+    position: relative;
+
+    overflow: hidden;
+    height: 100%;
+}
+
+.flickity-slider {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+}
+
+/* draggable */
+.flickity-enabled.is-draggable {
+    user-select: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
+
+/* ---- previous/next buttons ---- */
+.flickity-prev-next-button {
+    position: absolute;
+    top: 50%;
+
+    width: 44px;
+    height: 44px;
+    border: none;
+
+    border-radius: 50%;
+    background: #fff;
+    background: hsla(0,0%,100%,0.75);
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+    /* vertically center */
+
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.flickity-prev-next-button:hover {
+    background: #fff;
+}
+
+.flickity-prev-next-button:focus {
+    box-shadow: 0 0 0 5px #09f;
+    outline: none;
+}
+
+.flickity-prev-next-button:active {
+    /* IE8 */
+    opacity: .6;
+    filter: alpha(opacity=60);
+}
+
+.flickity-prev-next-button.previous {
+    left: 10px;
+}
+
+.flickity-prev-next-button.next {
+    right: 10px;
+}
+
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+    right: 10px;
+    left: auto;
+}
+
+.flickity-rtl .flickity-prev-next-button.next {
+    right: auto;
+    left: 10px;
+}
+
+.flickity-prev-next-button:disabled {
+    /* IE8 */
+    opacity: .3;
+    filter: alpha(opacity=30);
+
+    cursor: auto;
+}
+
+.flickity-prev-next-button svg {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+    width: 60%;
+    height: 60%;
+}
+
+.flickity-prev-next-button .arrow {
+    fill: #333;
+}
+
+/* color & size if no SVG - IE8 and Android 2.3 */
+.flickity-prev-next-button.no-svg {
+    color: #333;
+    font-size: 26px;
+}
+
+/* ---- page dots ---- */
+.flickity-page-dots {
+    position: absolute;
+    bottom: -25px;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    line-height: 1;
+    text-align: center;
+    list-style: none;
+}
+
+.flickity-rtl .flickity-page-dots {
+    direction: rtl;
+}
+
+.flickity-page-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    /* IE8 */
+
+    opacity: .25;
+    border-radius: 50%;
+    background: #333;
+    filter: alpha(opacity=25);
+
+    cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+    /* IE8 */
+    opacity: 1;
+    filter: alpha(opacity=100);
+}

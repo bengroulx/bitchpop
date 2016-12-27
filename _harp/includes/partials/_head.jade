@@ -1,0 +1,51 @@
+head
+
+    // Hi there 👋 Thanks for checking out our site’s source code! This site was designed and built by Ben Groulx, Bitchpop’s Operations Manager. You can check out the full source code over on GitHub at https://github.com/bengroulx/bitchpop. If you have any questions, comments, concerns, or whatever, feel free to send us a message: hello@bitchpopproductions.com.
+
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width,initial-scale=1.0')
+    title= title
+    meta(name='google-site-verification', content='XXX')
+    meta(name='description' content='#{ description }')
+    meta(name='keywords', content='XXX')
+    meta(name='author', content='Bitchpop Productions')
+
+    style html{background:black;}body{opacity:0;}
+
+    noscript#deferred-styles
+        link(rel='stylesheet' href='/assets/css/screen.css')
+
+    script(src='assets/js/modernizr.js')
+
+    script(async='').
+        var loadDeferredStyles=function(){var a=document.getElementById('deferred-styles'),b=document.createElement('div');b.innerHTML=a.textContent,document.body.appendChild(b),a.parentElement.removeChild(a)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(function(){window.setTimeout(loadDeferredStyles,0)}):window.addEventListener('load',loadDeferredStyles);
+
+    script(async='').
+        !function(a){var h,b={kitId:'cly7qum',scriptTimeout:3e3,async:!0},c=a.documentElement,d=setTimeout(function(){c.className=c.className.replace(/\bwf-loading\b/g,'')+' wf-inactive'},b.scriptTimeout),e=a.createElement('script'),f=!1,g=a.getElementsByTagName('script')[0];c.className+=' wf-loading',e.src='https://use.typekit.net/'+b.kitId+'.js',e.async=!0,e.onload=e.onreadystatechange=function(){if(h=this.readyState,!(f||h&&'complete'!=h&&'loaded'!=h)){f=!0,clearTimeout(d);try{Typekit.load(b)}catch(a){}}},g.parentNode.insertBefore(e,g)}(document);
+
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:site', content='@bengroulx')
+    meta(name='twitter:title', content='#{ title }')
+    meta(name='twitter:image', content='/assets/images/ben-groulx.jpg')
+    meta(name='twitter:creator', content='@bengroulx')
+    meta(name='twitter:image:alt', content='A headshot of Ben Groulx; He is standing on a beach, wearing a baseball cap.')
+    meta(name='twitter:description', content='#{ description }')
+
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-title', content='site.title | escape }}')
+    link(rel='apple-touch-icon', sizes='57x57', href='/assets/icons/apple-icon-57.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='/assets/icons/apple-icon-60.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='/assets/icons/apple-icon-72.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='/assets/icons/apple-icon-76.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='/assets/icons/apple-icon-114.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='/assets/icons/apple-icon-120.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='/assets/icons/apple-icon-144.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='/assets/icons/apple-icon-152.png')
+    link(rel='apple-touch-icon', sizes='180x180', href='/assets/icons/apple-icon-180.png')
+    link(rel='icon', type='image/png', sizes='192x192', href='/assets/icons/android-icon-192.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='/assets/icons/favicon-32.png')
+    link(rel='icon', type='image/png', sizes='96x96', href='/assets/icons/favicon-96.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='/assets/icons/favicon-16.png')
+    meta(name='msapplication-TileImage', content='/assets/icons/ms-icon-144.png')
+    meta(name='msapplication-TileColor', content='#121b92')

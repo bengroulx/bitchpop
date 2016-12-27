@@ -1,0 +1,12 @@
+doctype
+
+html(lang='en-ca')
+
+    != partial('includes/partials/_head')
+
+    body.u-context.a-fade-in--mid-forwards
+        != partial('includes/partials/_header')
+
+        != yield
+
+        != partial('includes/partials/_footer')
