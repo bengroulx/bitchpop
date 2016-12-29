@@ -1,11 +1,85 @@
-div.u-min-full-vh.u-context.u-flexbox.u-flex-column.u-full-height.u-clip.u-z1
+include /includes/components/card
 
-    != partial('includes/partials/_hero')
+div.u-position.u-t-0.u-r-0.u-l-0.u-full-vh
+    div.u-context.u-gradient(style='height:0;padding-bottom:56.25%;background-image:url(assets/img/bg.jpg);background-size:cover;')
+    //
+        div#muteYouTubeVideoPlayer.u-position.u-t-0.u-r-0.u-l-0.u-b-0.u-full-width.u-full-height
+        script(async='', src='https://www.youtube.com/iframe_api')
+        script.
+            function onYouTubeIframeAPIReady() {
+                var player;
+                player = new YT.Player('muteYouTubeVideoPlayer', {
+                    videoId: 'T1nAFmd5iQA', // YouTube Video ID
+                    width: 1280,            // Player width (in px)
+                    height: 720,            // Player height (in px)
+                    playerVars: {
+                        autoplay: 1,        // Auto-play the video on load
+                        controls: 0,        // Show pause/play buttons in player
+                        showinfo: 0,        // Hide the video title
+                        modestbranding: 1,  // Hide the Youtube Logo
+                        loop: 1,            // Run the video in a loop
+                        fs: 0,              // Hide the full screen button
+                        cc_load_policy: 0,  // Hide closed captions
+                        iv_load_policy: 3,  // Hide the Video Annotations
+                        autohide: 1,        // Hide video controls when playing
+                        playlist: 'T1nAFmd5iQA'
+                    },
+                    events: {
+                        onReady: function(e) {
+                            e.target.mute();
+                        }
+                    }
+                });
+            }
 
-    div.slider.u-position.u-t-0.u-full-vw.u-z3.u-thick-text-shadow.a-fade-in--mid-forwards
-        div.stacks-wrapper.u-full-height
-            != partial('/includes/projects/tea-time/_root')
-            != partial('/includes/projects/almost-actors/_root')
-            != partial('/includes/projects/shots/_root')
+div.u-clip(style='padding-top:30vw;')
 
-script(src='assets/js/main.js')
+    +card(
+        'Tea Time With T & A',
+        'Talk Show • Comedy',
+        'assets/img/poster--tea-time-with-t-a.jpg')
+
+    +card(
+        'High Five Goodbye',
+        'Short Film • Comedy',
+        'assets/img/poster--high-five-goodbye.jpg')
+
+    +card(
+        'The Meltdown',
+        'Short Film • Drama/Comedy',
+        'assets/img/poster--meltdown.jpg')
+
+    +card(
+        'Almost Actors',
+        'Series • Comedy',
+        'assets/img/poster--almost-actors.jpg')
+
+    +card(
+        'The Ex You Can’t Escape',
+        'Series • Comedy',
+        'assets/img/poster--ex-you-cant-escape.jpg')
+
+    +card(
+        'The Condenado League',
+        'Short Film • Comedy',
+        'assets/img/poster--condenado-league.jpg')
+
+    +card(
+        'A Blast from Our Teenage Pasts',
+        'Sketch • Comedy',
+        'assets/img/poster--blast-from-out-teenage-pasts.jpg')
+
+    +card(
+        'Friend Anxiety',
+        'Sketch • Comedy',
+        'assets/img/poster--friend-anxiety.jpg')
+
+    +card(
+        'Lactivia',
+        'Sketch • Comedy',
+        'assets/img/poster--lactivia.jpg')
+
+    +card(
+        'Deadbeat Daddies',
+        'Sketch • Comedy',
+        'assets/img/poster--deadbeat-daddies.jpg')

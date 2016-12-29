@@ -1,11 +1,42 @@
-footer(hidden='')
-
-        h2.footer-heading {{ site.title }}
-        .footer-col-wrapper
-            .footer-col.footer-col-1
-                ul.contact-list
-                    li {{ site.title }}
-                    li
-                        a(href='mailto:{{ site.email }}') {{ site.email }}
-            .footer-col.footer-col-3
-                p {{ site.description }}
+footer.u-text-center(role='contentinfo')
+    div.u-flexbox.u-justify-around(style='margin-top:5em;margin-bottom:3em;')
+        div.u-padding-start.u-padding-end
+            h5.u-margin-bottom.u-text-uppercase Discover Bitchpop
+            ul.content
+                li.u-margin-bottom
+                    a(href='http://bitchpopproductions.com') Home
+                li.u-margin-bottom
+                    a(href='http://bitchpopproductions.com/about/') Meet the team
+                li.u-margin-bottom
+                    a(href='http://bitchpopproductions.com/press/') In the Press
+                li
+                    a(href='http://bitchpopproductions.com/terms-of-use/') Terms of Use
+        div.u-padding-start.u-padding-end
+            h5.u-margin-bottom.u-text-uppercase Get in touch
+            ul.content
+                li.u-margin-bottom
+                    a(href='mailto:hello@bitchpopproductions.com') hello@bitchpopproductions.com
+                li.u-margin-bottom.u-half-transparent —
+                li
+                    a(href='https://goo.gl/maps/kpQHm')
+                        address
+                            span.u-block.u-margin-bottom 1068 Hornby Street
+                            span Vancouver, Canada
+        div.u-padding-start.u-padding-end
+            h5.u-margin-bottom.u-text-uppercase Connect
+            ul.content.social.links
+                li.u-margin-bottom
+                    a(target='_blank', href='https://youtube.com/BitchpopProductions') YouTube
+                li.u-margin-bottom
+                    a(target='_blank', href='https://facebook.com/B.TCHPOPproductins') Facebook
+                li.u-margin-bottom
+                    a(target='_blank', href='https://twitter.com/WatchBitchpop') Twitter
+                li
+                    a(target='_blank', href='https://instagram.com/BitchpopProductions') Instagram
+    div.u-padding.u-half-transparent.u-text-size-small
+        p
+            | Copyright © 2015–
+            script document.write(new Date().getFullYear()) 
+            |  Bitchpop Productions. All Rights Reserved. 
+            a(href='https://house-house.design', target='_blank') Site by House House Design
+            | .

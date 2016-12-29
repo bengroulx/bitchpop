@@ -25,9 +25,87 @@
     width: 100%;
 }
 
+
+// Half Width
+// ---
+
 .u-half-width {
     width: 50%;
 }
+
+@include --small-up {
+    .u-half-width--small-up {
+        width: 50%;
+    }
+}
+
+@include --medium-up {
+    .u-half-width--medium-up {
+        width: 50%;
+    }
+}
+
+@include --large-up {
+    .u-half-width--large-up {
+        width: 50%;
+    }
+}
+
+
+// Third Width
+// ---
+
+.u-third-width {
+    width: 33.33%;
+}
+
+@include --small-up {
+    .u-third-width--small-up {
+        width: 33.33%;
+    }
+}
+
+@include --medium-up {
+    .u-third-width--medium-up {
+        width: 33.33%;
+    }
+}
+
+@include --large-up {
+    .u-third-width--large-up {
+        width: 33.33%;
+    }
+}
+
+
+// Quarter Width
+// ---
+
+.u-quarter-width {
+    width: 25%;
+}
+
+@include --small-up {
+    .u-quarter-width--small-up {
+        width: 25%;
+    }
+}
+
+@include --medium-up {
+    .u-quarter-width--medium-up {
+        width: 25%;
+    }
+}
+
+@include --large-up {
+    .u-quarter-width--large-up {
+        width: 25%;
+    }
+}
+
+
+
+
 
 .u-full-height {
     height: 100%;

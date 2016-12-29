@@ -1,0 +1,11 @@
+mixin card(title, subtitle, image)
+
+    div.u-full-width.u-half-width--small-up.u-third-width--medium-up.u-quarter-width--large-up.u-float-start.u-padding.u-text-center
+
+        article.c-card.u-context.u-clip.u-bg-pink.u-box-shadow-thin.u-gradient
+            div.u-position.u-z2.u-t-0.u-r-0.u-b-0.u-l-0.u-padding(style='pointer-events:none', role='decorative')
+                div.u-full-width.u-full-height.u-border-white
+            div.u-position.u-z3.u-center.u-full-width.u-padding-start.u-padding-end.u-text-shadow-thin
+                h2.u-padding-top.u-padding-start.u-padding-end.u-margin-bottom #{title}
+                h5.u-padding-start.u-padding-end.u-text-uppercase.u-regular #{subtitle}
+            img.c-card__image.u-position.u-z1.u-block.u-full-height.u-center.u-half-transparent(src='#{image}', alt='#{title}')

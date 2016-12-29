@@ -1,6 +1,14 @@
 // Global Typographic Styles
 // ===
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.125;
+}
+
 ol,
 ul {
     list-style: none;
@@ -17,17 +25,10 @@ blockquote {
 }
 
 a {
-    outline: none;
-
     color: $pink;
     text-decoration: none;
 
     &:hover {
         color: darken($pink, 10%);
-    }
-
-    &:hover,
-    &:focus {
-        outline: none;
     }
 }

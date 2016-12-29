@@ -1,0 +1,16 @@
+// Card Component
+// ===
+
+.c-card {
+    height: 50vh;
+
+    background-position: center;
+    background-size: cover;
+    transition: all ease-out 0.125s;
+
+    @include --small-up {
+        &:hover  {
+            transform: scale(1.1) rotate(-2deg);
+        }
+    }
+}

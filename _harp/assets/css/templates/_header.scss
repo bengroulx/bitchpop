@@ -2,20 +2,11 @@
 // ===
 
 .t-header {
-
-    &::before {
-        content: '';
-
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -$z1-depth;
-
-        background: linear-gradient(rgba($black, 0.25), rgba($black, 0));
-    }
+    opacity: 0.975;
 }
 
-@media screen and (max-width: 45em) {
+@supports (backdrop-filter: blur(10px)) {
+    .example {
+        backdrop-filter: blur(10px);
+    }
 }
