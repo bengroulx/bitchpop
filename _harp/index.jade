@@ -1,8 +1,7 @@
 include /includes/components/card
 
-div.u-position.u-t-0.u-r-0.u-l-0.u-full-vh
+div.u-fixed.u-t-0.u-r-0.u-l-0.u-full-vh
     div.u-context.u-gradient(style='height:0;padding-bottom:56.25%;background-image:url(assets/img/bg.jpg);background-size:cover;')
-    //
         div#muteYouTubeVideoPlayer.u-position.u-t-0.u-r-0.u-l-0.u-b-0.u-full-width.u-full-height
         script(async='', src='https://www.youtube.com/iframe_api')
         script.
@@ -10,8 +9,8 @@ div.u-position.u-t-0.u-r-0.u-l-0.u-full-vh
                 var player;
                 player = new YT.Player('muteYouTubeVideoPlayer', {
                     videoId: 'T1nAFmd5iQA', // YouTube Video ID
-                    width: 1280,            // Player width (in px)
-                    height: 720,            // Player height (in px)
+                    width: 640,             // Player width (in px)
+                    height: 360,            // Player height (in px)
                     playerVars: {
                         autoplay: 1,        // Auto-play the video on load
                         controls: 0,        // Show pause/play buttons in player
