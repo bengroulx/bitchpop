@@ -125,6 +125,18 @@ main {
     display: block;
 }
 
+img {
+    max-width: 100%;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+
+    opacity: 0.25;
+    background-color: currentColor;
+}
+
 table {
     border-spacing: 0;
     border-collapse: collapse;

@@ -1,22 +1,77 @@
 // Utilities: margin
 // ===
 
+.u-margin-horizontal-fill {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+// Margin All
+// ---
+
 .u-margin {
     margin: $unit;
 }
+
+@include --small-up {
+    .u-margin--small-up {
+        margin: $unit;
+    }
+}
+
+
+// Margin Top
+// ---
 
 .u-margin-top {
     margin-top: $unit;
 }
 
+@include --small-up {
+    .u-margin-top--small-up {
+        margin-top: $unit;
+    }
+}
+
+
+// Margin Bottom
+// ---
+
 .u-margin-bottom {
     margin-bottom: $unit;
 }
+
+@include --small-up {
+    .u-margin-bottom--small-up {
+        margin-bottom: $unit;
+    }
+}
+
+
+// Margin Start
+// ---
 
 .u-margin-start {
     margin-left: $unit;
 }
 
+@include --small-up {
+    .u-margin-start--small-up {
+        margin-left: $unit;
+    }
+}
+
+
+// Margin End
+// ---
+
 .u-margin-end {
     margin-right: $unit;
+}
+
+@include --small-up {
+    .u-margin-end--small-up {
+        margin-right: $unit;
+    }
 }

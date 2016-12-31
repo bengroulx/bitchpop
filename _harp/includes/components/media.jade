@@ -1,17 +1,20 @@
-mixin media(image, title, date, number, description)
+mixin media(image, title, date, number, description, link)
 
-    article.item.u-context.u-full-width.u-text-left
-        div.item__content.u-context.u-z3
+    article.c-media.u-context.u-padding.u-clip.u-gradient
 
-            div.item__image.u-clip
-                img.u-context.u-z3.u-block.u-full-width(src='#{image}', alt='#{title}')
+        figure.u-context.u-z3.u-padding-top.u-padding-bottom.u-measure-medium.u-margin-horizontal-fill
+            
+            div.c-media__image.c-faux-link.u-context.u-margin-bottom.u-box-shadow-thin.u-clip
+                a.c-faux-link__overlay(href='#{link}', aria-hidden='true', tabindex='-1') Find out more about #{title}
+                img.u-block.u-full-width(src='#{image}', alt='#{title}')
 
-            h3.u-margin-top.u-flexbox.u-align-middle
-                span.u-text-size-large #{title}
-                span.u-text-size-small.u-block.u-margin-start.u-half-transparent #{date}
+            figcaption.c-text-content.u-text-shadow-thick
+                h3.u-text-size-large #{title}
+                h4.u-text-size-normal.u-half-transparent
+                    span.u-inline-block.u-padding-end #{number}
+                    span.u-inline-block.u-padding-end •
+                    time.u-inline-block(datetime='#{date}' itemprop='datePublished') #{date}
+                p #{description}
 
-            div.item__details.u-position.u-t-0.u-z4
-                ul.c-text-content
-                    li.u-block.u-bold.u-margin-bottom #{number}
-                    li.u-block
-                        | #{description}
+        div.u-position.u-t-0.u-r-0.u-l-0.u-b-0.u-z1.u-half-transparent(aria-hidden='true', tabindex='-1', role='decorative')
+            div.u-blur.u-full-width.u-full-height.u-bg-cover.u-bg-center(style='background-image:url(#{image});transform:scale(1.1)')

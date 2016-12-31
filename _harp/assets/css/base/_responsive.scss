@@ -1,15 +1,15 @@
 @mixin --small-only {
-    @media (max-width: 37rem) { @content; }
+    @media screen and (max-width: $content-area-narrow) { @content; }
 }
 
 @mixin --small-up {
-    @media (min-width: 37rem) { @content; }
+    @media screen and (min-width: $content-area-narrow) { @content; }
 }
 
 @mixin --medium-up {
-    @media (min-width: 55rem) { @content; }
+    @media screen and (min-width: $content-area-medium) { @content; }
 }
 
 @mixin --large-up {
-    @media (min-width: 80rem) { @content; }
+    @media screen and (min-width: $content-area-wide) { @content; }
 }

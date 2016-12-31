@@ -1,0 +1,14 @@
+// Utilities: Measure
+// ===
+
+.u-measure-narrow {
+    max-width: calc(#{$content-area-narrow} - #{$unit * 10});
+}
+
+.u-measure-medium {
+    max-width: calc(#{$content-area-medium} - #{$unit * 10});
+}
+
+.u-measure-wide {
+    max-width: calc(#{$content-area-wide} - #{$unit * 10});
+}

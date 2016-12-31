@@ -1,0 +1,42 @@
+// Media Component
+// ===
+
+.c-media__image {
+    img,
+    &::before {
+        transition: all 0.25s ease-out;
+    }
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: $z2-depth;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: ($unit * 5);
+        height: ($unit * 5);
+        border: 1px solid rgba($white, 0.15);
+
+        border-radius: 100%;
+        background: rgba($black, 0.5) url('../img/arrow-colored.svg') no-repeat center center;
+
+        transform: translate(-50%, -50%) rotate(90deg);
+
+        pointer-events: none;
+    }
+
+    &:hover {
+        img {
+            transform: rotate(-3deg) scale(1.1);
+        }
+
+        &::before {
+            transform: translate(-50%, -50%) rotate(90deg) scale(1.3);
+        }
+    }
+}

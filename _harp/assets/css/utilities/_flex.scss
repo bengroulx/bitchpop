@@ -4,13 +4,29 @@
 .u-flexbox {
     display: flex;
 
-    &:not(.u-flex-column) {
+    &:not([class*='u-flex-column']) {
         flex-direction: row;
+    }
+}
+
+@include --small-up {
+    .u-flexbox--small-up {
+        display: flex;
+
+        &:not([class*='u-flex-column']) {
+            flex-direction: row;
+        }
     }
 }
 
 .u-flex-column {
     flex-direction: column;
+}
+
+@include --small-only {
+    .u-flex-column--small-only {
+        flex-direction: column;
+    }
 }
 
 
@@ -46,16 +62,13 @@
 // ---
 
 .u-flex {
-    display: block;
     flex: 1 1 auto;
 }
 
 .u-flex-expand {
-    display: block;
     flex: 1;
 }
 
 .u-flex-shrink {
-    display: block;
     flex: 0 1 auto;
 }

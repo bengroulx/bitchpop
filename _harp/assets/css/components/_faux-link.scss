@@ -1,0 +1,26 @@
+// Faux Link Component
+// ===
+
+.c-faux-link {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.c-faux-link__overlay {
+    @extend %x-cover;
+
+    position: absolute;
+    z-index: $z4-depth;
+
+    display: block;
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-indent: 200%;
+
+    .lt-ie9 & {
+        opacity: 0;
+        background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');
+    }
+}

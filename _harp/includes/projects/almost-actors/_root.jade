@@ -1,11 +1,25 @@
 include /includes/components/media
 
-div.stack.u-full-height.u-text-center
+section.u-padding
+    div.u-measure-medium.u-padding-top.u-margin-horizontal-fill.u-flexbox.u-flex-column--small-only
 
-    h2.stack-title.u-context.u-inline-block.u-bold.u-text-center
-        a.u-context.u-full-width.u-block(href='#', data-text='Almost Actors')
-            span.u-block Almost Actors
+        div.u-margin-bottom.u-flex-shrink.u-full-width.u-margin-end--small-up
+            img.u-block.u-margin-horizontal-fill(src='assets/img/almost-actors/poster.jpg', style='max-width:15rem;')
 
+        div.c-text-content.u-margin-bottom.u-flex
+            h1.u-text-size-very-large.u-margin-bottom Almost Actors
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor voluptatibus quibusdam, ut, neque, nostrum modi eos, nihil ipsam nobis aspernatur sapiente veritatis aut! Aspernatur placeat, velit voluptates ipsa earum dolorem.
+            hr
+            ul
+                li #[strong Written By] — Tiarra Sulyk, Athena Russell, & Jessica McLeod
+                li #[strong Directed By] — Various by episode
+                li #[strong Starring] — Athena Russell, Tiarra Sulyk, Ben Groulx, Meaghan Hommy, Jessica McLeod, Cody Wilson, Robyn Westcott, Mark Anthony Parinas, Matt Mazur, Julian LeBlanc, Nicholas Carella
+            hr
+            ul
+                li → #[a(href='#') Explore on IMDB]
+                li → #[a(href='#') Watch on YouTube] 
+
+section
     +media(
         'http://placehold.it/1920x1080', 
         'The Song Exercise', 

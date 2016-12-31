@@ -13,6 +13,22 @@
     display: inline-block;
 }
 
+.u-hide {
+    display: none;
+}
+
+@include --small-only {
+    .u-hide--small-only {
+        display: none;
+    }
+}
+
+@include --small-up {
+    .u-hide--small-up {
+        display: none;
+    }
+}
+
 .u-clip {
     overflow: hidden;
 }
@@ -23,6 +39,24 @@
 
 .u-full-width {
     width: 100%;
+}
+
+@include --small-up {
+    .u-full-width--small-up {
+        width: 100%;
+    }
+}
+
+@include --medium-up {
+    .u-full-width--small-up {
+        width: 100%;
+    }
+}
+
+@include --large-up {
+    .u-full-width--large-up {
+        width: 100%;
+    }
 }
 
 

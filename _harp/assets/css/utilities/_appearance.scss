@@ -62,6 +62,14 @@
 }
 
 
+// Blur
+// ---
+
+.u-blur {
+    filter: blur($unit);
+}
+
+
 // Gradients
 // ---
 

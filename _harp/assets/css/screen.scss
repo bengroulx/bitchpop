@@ -23,6 +23,7 @@
 @import 'utilities/flex';
 @import 'utilities/layout';
 @import 'utilities/margin';
+@import 'utilities/measure';
 @import 'utilities/padding';
 @import 'utilities/text';
 
@@ -38,12 +39,12 @@
 
 @import 'components/card';
 @import 'components/container';
-@import 'components/hero';
-// @import 'components/item';
-// @import 'components/loader';
-// @import 'components/slider';
-// @import 'components/stack';
+@import 'components/faux-link';
+@import 'components/media';
 @import 'components/text-content';
+// @import 'components/hero';
+// @import 'components/loader';
+// @import 'components/stack';
 
 
 // Templates
@@ -57,4 +58,4 @@
 // Third-Party Plugins
 // ---
 
-//@import 'third-party/flickity';
+// @import 'third-party/flickity';

@@ -1,3 +1,10 @@
+// Text Content Component
+// ===
+
 .c-text-content {
     line-height: $paragraph-line-height;
+
+    > *:not(:last-child) {
+        margin-bottom: 0.5em;
+    }
 }

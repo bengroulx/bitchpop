@@ -3,17 +3,20 @@ header.t-header.u-fixed.u-t-0.u-l-0.u-r-0.u-z4.u-padding.u-bg-white.u-black.u-bo
     div.u-flexbox.u-align-middle.u-padding-start.u-padding-end
 
         div.u-flex
-            h1(hidden='').u-text-size-normal Bitchpop Productions
-            img(src='assets/img/logo-black.png', style='width:10em;')
+            a.u-block(href='/')
+                h1(hidden='').u-text-size-normal Bitchpop Productions
+                img(src='assets/img/logo-black.png', style='width:10em;')
 
-        div.u-flex-shrink
+        div.u-flex-shrink.u-hide--small-only
             nav.u-flexbox(role='navigation')
-                a.u-block(href='#')
+                a.u-block(href='/', class="#{ current.source == 'index' ? 'c-nav__active' : '' }")
+                    span.u-block.u-padding Watch
+                a.u-block(href='/about', class="#{ current.source == 'about' ? 'c-nav__active' : '' }")
                     span.u-block.u-padding What Is Bitchpop?
-                a.u-block(href='#')
+                a.u-block(href='/press', class="#{ current.source == 'press' ? 'c-nav__active' : '' }")
                     span.u-block.u-padding In The Press
-                a.u-block(href='#')
+                a.u-block(href='/pitch', class="#{ current.source == 'pitch' ? 'c-nav__active' : '' }")
                     span.u-block.u-padding Pitch Your Concept
                 span.u-block.u-bleed-top.u-bleed-bottom.u-bleed-end.u-padding-start
                     span.u-block.u-padding.u-bg-pink.u-white.u-bleed-end
-                        span.u-block.u-padding Contact
+                        span.u-block.u-padding TW / FB
