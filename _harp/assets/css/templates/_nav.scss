@@ -1,0 +1,21 @@
+// Navigation
+// ===
+
+.t-nav__active {
+    &::after {
+        content: '';
+
+        position: absolute;
+        bottom: -($unit / 1.5);
+        left: 50%;
+
+        display: block;
+        width: $unit;
+        height: $unit;
+
+        background: url('../img/arrow-colored.svg') no-repeat center center;
+        background-size: 100%;
+
+        transform: translate(-50%, -50%);
+    }
+}

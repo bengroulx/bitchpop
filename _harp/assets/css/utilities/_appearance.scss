@@ -70,10 +70,12 @@
 }
 
 
-// Gradients
+// Textures, Gradients, Patterns
 // ---
 
-.u-gradient {
+.u-gradient,
+.u-pattern {
+    &::before,
     &::after {
         @extend %x-cover;
 
@@ -81,6 +83,21 @@
 
         position: absolute;
 
+        pointer-events: none;
+    }
+}
+
+.u-gradient {
+    &::after {
         background: linear-gradient(to bottom, rgba($black, 0), rgba($black, 0), rgba($black, 1));
+    }
+}
+
+.u-pattern {
+    &::before {
+        opacity: 0.25;
+        background-image: url('../img/bg-geometry.png');
+        background-position: top center;
+        background-size: 25em;
     }
 }

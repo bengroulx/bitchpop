@@ -1,0 +1,8 @@
+// Ratio Component
+// ===
+
+.c-ratio {
+    &.c--16x9 {
+        padding-bottom: ((9% / 16) * 100);
+    }
+}

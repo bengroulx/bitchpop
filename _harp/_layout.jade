@@ -1,12 +1,9 @@
 doctype
 html(lang='en-ca')
 
-    != partial('includes/partials/_head')
+    != partial('/includes/partials/_head')
 
     body.a-fade-in--mid-forwards
-        != partial('includes/partials/_header')
-        != partial('includes/partials/_main')
-        != partial('includes/partials/_footer')
-
-        a.u-block.u-fixed.u-b-0.u-r-0.u-text-center.u-slightly-transparent.u-padding.u-black.u-text-size-small(style='background:yellow;', href='mailto:hello@bitchpopproductions.com')
-            | This site is in Beta; If something looks wrong or broken, please let us know →
+        != partial('/includes/partials/_header')
+        != partial('/includes/partials/_main')
+        != partial('/includes/partials/_footer')

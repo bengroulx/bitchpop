@@ -13,6 +13,12 @@
     background-color: $pink;
 }
 
+@include --small-up {
+    .u-bg-pink--small-up {
+        background-color: $pink;
+    }
+}
+
 .u-bg-center {
     background-position: center;
 }

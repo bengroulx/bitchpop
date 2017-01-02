@@ -1,11 +1,27 @@
-include /includes/components/card
+include /includes/components/_card
 
-div.u-position.u-z3.u-full-width(style='margin-top:10vw;')
-    h1.u-measure-medium.u-padding.u-text-center.u-margin-horizontal-fill.u-pink
-        | Bitchpop Productions aims to create, promote, and uplift female-driven film.
+section.u-context
+    div.c-ratio.c--16x9.u-context.u-pattern.u-gradient.u-bg-cover(style='background-image:url("/assets/img/bg.jpg");')
+    div.u-position--small-up.u-center--small-up.u-z3.u-full-width
+        div.c-text-content.u-measure-medium.u-margin-horizontal-fill.u-bg-pink--small-up.u-padding.u-text-center.u-box-shadow-thin
+            h1.u-padding #{description}
+            hr
+            p.u-padding We love Vancouver, it’s our home. But we noticed something was missing, something important: original content created by or featuring women, especially comedy. It’s actually seriously lacking. We’re here to change that. By creating our own films and series, like Almost Actors and SHOTS, we hope to bring a fresh perspective into the comedy world. We’re all about creating interesting characters, funny stories, and unique concepts. We hope you like what you see.
 
-div.u-context.u-gradient(style='height:0;padding-bottom:56.25%;background-image:url(assets/img/bg.jpg);background-size:cover;')
+section.u-context.u-gradient.u-clip
 
-div.u-context.u-clip.u-measure-medium.u-margin-horizontal-fill(style='margin-top:-15vw;')
-    div.c-text-content.u-padding.u-text-shadow-thick
-        p We love Vancouver, it’s our home. But we noticed something was missing, something important: original content created by or featuring women, especially comedy. It’s actually seriously lacking. We’re here to change that. By creating our own films and series, like Almost Actors and SHOTS, we hope to bring a fresh perspective into the comedy world. We’re all about creating interesting characters, funny stories, and unique concepts. We hope you like what you see. Watch our videos →
+    div.u-context.u-z1.u-full-width.u-half-width--small-up.u-float-start
+        div.u-full-width.u-half-width--medium-up.u-float-start.u-padding
+            +card('Athena Russell', 'Co-Creator', '/assets/img/athena-russell.jpg', '#')
+        div.u-full-width.u-half-width--medium-up.u-float-start.u-padding
+            div.c-text-content
+                p Having grown up in Victoria, BC, Athena began acting at a young age. She starred in countless productions throughout her many years in school. She fell in love with performing and did everything necessary to ensure she was the best — enrolled in dancing and singing lessons as a child and continued taking them well into her teens. She moved to Vancouver, after completing the Theatre Acting program at the Canadian College of the Performing Arts in Victoria, and enrolled in Vancouver Acting School’s Full-Time Acting for Film/Television Intensive Program. Since graduating in 2012 she has been auditioning and booking regularly, nabbing recurring roles on a few network series, and creating work for herself. When she’s not auditioning, she’s teaching child actors at LeBlanc School of Acting. She loves drinking beer, playing badminton, singing, puddle-jumping, and laughing. Oh, and she hates wearing pants, or flats — she’s always in heels and dresses. Her dream is to have her own sitcom a la “New Girl” or “The Mindy Project.”
+
+    div.u-context.u-z1.u-full-width.u-half-width--small-up.u-float-start
+        div.u-full-width.u-half-width--medium-up.u-float-start.u-padding
+            +card('Tiarra Sulyk', 'Co-Creator', '/assets/img/tiarra-sulyk.jpg', '#')
+        div.u-full-width.u-half-width--medium-up.u-float-start.u-padding
+            div.c-text-content
+                p Hailing from the small town of Pemberton, BC, Tiarra is anything but a small town girl. She became interested in acting as a child when she realized you could make money to lie. She begged her mother to get her an agent, but unfortunately, having a single mother raising three children left little room to make the two hour drive to Vancouver every week. That didn’t stop her from performing though. In Elementary school she was constantly the lead in all of the school’s productions. Then, in high school, she spearheaded a Drama Club so that she could perform once more. After graduation, she moved to Vancouver and enrolled in Vancouver Acting School’s Full-Time Acting for Film/Television Intensive Program. It was there that she realized her dream to be a female comedian. She began watching SNL religiously, writing stand-up jokes and eventually, writing sketches. She hopes to provide laughter in her own, dry (though sometimes in-your-face) kind of way! Her dream is to land a coveted role on SNL. When she’s not dreaming about the future, she’s event planning, hosting parties, playing with her “catmigos” (those are her cats) and eating gluten free foods.
+
+hr.u-white(style='margin-top:5rem;')

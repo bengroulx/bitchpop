@@ -4,8 +4,6 @@
 .c-card {
     height: 50vh;
 
-    background-position: center;
-    background-size: cover;
     transition: all ease-out 0.125s;
 
     @include --small-up {

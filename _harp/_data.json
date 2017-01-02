@@ -1,0 +1,220 @@
+{
+    "about": {
+        "title":
+            "What Is Bitchpop? — About",
+        "description":
+            "Bitchpop Productions aims to create, promote, and uplift female-driven film."
+    },
+    "press": {
+        "title":
+            "In The Press",
+        "description":
+            "Interviews, press releases, links, and mentions."
+    },
+    "pitch": {
+        "title":
+            "Pitch Your Concept",
+        "description":
+            "XXXXXX"
+    },
+    "tea-time-with-t-a": {
+        "title":
+            "Tea Time With T & A",
+        "slug":
+            "tea-time-with-t-a",
+        "color":
+            "#44264d",
+        "description":
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor voluptatibus quibusdam, ut, neque, nostrum modi eos, nihil ipsam nobis aspernatur sapiente veritatis aut! Aspernatur placeat, velit voluptates ipsa earum dolorem.",
+        "writtenBy":
+            "Tiarra Sulyk & Athena Russell",
+        "directedBy":
+            "Various by episode",
+        "starring":
+            "Tiarra Sulyk, Athena Russell, and guests",
+        "imdb":
+            "http://imdb.com/title/tt5778424/",
+        "youtube":
+            "https://youtube.com/playlist?list=PL-Kr8Im2WgzeFyQTFThMQiWaxgu5LUMgs"
+    },
+    "almost-actors": {
+        "title":
+            "Almost Actors",
+        "slug":
+            "almost-actors",
+        "color":
+            "#1a2d51",
+        "description":
+            "Almost Actors is a comedic webseries based on the terrible and often hysterical archetypes you meet in acting school, created by Tiarra Sulyk, Athena Russell, and Jessica McLeod.",
+        "writtenBy":
+            "Tiarra Sulyk, Athena Russell, & Jessica McLeod",
+        "directedBy":
+            "Various by episode",
+        "starring":
+            "Athena Russell, Tiarra Sulyk, Ben Groulx, Meaghan Hommy, Jessica McLeod, Cody Wilson, Robyn Westcott, Mark Anthony Parinas, Matt Mazur, Julian LeBlanc, Nicholas Carella",
+        "imdb":
+            "http://imdb.com/title/tt4537258/",
+        "youtube":
+            "https://www.youtube.com/playlist?list=PL-Kr8Im2WgzfEBV3m1T6PsQdCfL_Sug4X"
+    },
+    "high-five-goodbye": {
+        "title":
+            "High Five Goodbye",
+        "slug":
+            "high-five-goodbye",
+        "color":
+            "#1a2d51",
+        "description":
+            "At the end of their first date, April and Ben are parting ways when instead of a kiss, Ben goes in for an awkward high-five. In that moment a piece of ultra-sticky gum falls from the sky cementing their hands together. Fate just made this date a whole lot longer.",
+        "writtenBy":
+            "Athena Russell",
+        "directedBy":
+            "Devon Mussett & Athena Russell",
+        "starring":
+            "Scott Patey, Athena Russell, Tiarra Sulyk, Brandon Jason Miller, Hannah Rochelle Burr, Zia Marashi, Stephi Chin-Salvo, Kougar Vakarian, Megs Calleja",
+        "imdb":
+            "http://imdb.com/title/tt6255818",
+        "youtube":
+            "https://youtu.be/X7765DcYqnQ"
+    },
+    "meltdown": {
+        "title":
+            "The Meltdown",
+        "slug":
+            "meltdown",
+        "color":
+            "#272916",
+        "description":
+            "A break up, alcohol, mental illness — it's the perfect storm. What’s your breaking point? “The Meltdown” is not currently available for public viewing; if you would like to view it, please contact us.",
+        "writtenBy":
+            "Tiarra Sulyk & Athena Russell",
+        "directedBy":
+            "Devon Mussett & Athena Russell",
+        "starring":
+            "Tiarra Sulyk, Athena Russell, Scott Patey, Brady Roberts",
+        "imdb":
+            "http://imdb.com/title/tt5986534/",
+        "youtube":
+            "#"
+    },
+    "condenado-league": {
+        "title":
+            "The Condenado League",
+        "slug":
+            "condenado-league",
+        "color":
+            "#303e3f",
+        "description":
+            "The Crimson Death and The Tandoori have taken over the world. The best superheroes are dead. All that remains: The Condenado League — a band of useless heroes. Should we trust them to save the day?",
+        "writtenBy":
+            "Tiarra Sulyk",
+        "directedBy":
+            "Ben Groulx",
+        "starring":
+            "Catherine Lough Haggquist, Matt Mazur, Tiarra Sulyk, Athena Russell, Jessica McLeod, Meaghan Hommy, Ben Groulx, Brian Doe, Cody Wilson, Antony Kim, Keenan Sawatsky, Jacob Harris, Erin Michell",
+        "imdb":
+            "http://imdb.com/title/tt4897454/",
+        "youtube":
+            "https://youtu.be/TeDqgDPFvwI"
+    },
+    "blast-from-our-teenage-pasts": {
+        "title":
+            "A Blast From Our Teenage Pasts",
+        "slug":
+            "blast-from-our-teenage-pasts",
+        "color":
+            "#222",
+        "description":
+            "Being a teenager is hard. Follow along as we pick out awkward diary entries from our teenage years and laugh at the angst, the heartbreak, and the hilarity that is growing up.",
+        "writtenBy":
+            "Individual entry readers",
+        "directedBy":
+            "Athena Russell, Tiarra Sulyk",
+        "starring":
+            "Athena Russell, Tiarra Sulyk, Ben Groulx, Matt Shaw, Jessica McLeod, Nicole Vicente",
+        "imdb":
+            "http://imdb.com/title/tt4897454/",
+        "youtube":
+            "https://youtu.be/TeDqgDPFvwI"
+    },
+    "ex-you-cant-escape": {
+        "title":
+            "The Ex You Can’t Escape",
+        "slug":
+            "ex-you-cant-escape",
+        "color":
+            "#422228",
+        "description":
+            "Have you ever experience a devastating break-up that you just can't shake? Zooey certainly has - she, quite literally, can't escape.",
+        "writtenBy":
+            "Tiarra Sulyk, Athena Russell",
+        "directedBy":
+            "Athena Russell, Devon Mussett",
+        "starring":
+            "Athena Russell, Tiarra Sulyk, Jenna Romanin, Madison Smith, Catherine Lough Haggquist",
+        "imdb":
+            "http://imdb.com/title/tt5813620/",
+        "youtube":
+            "https://youtu.be/TeDqgDPFvwI"
+    },
+    "lactivia": {
+        "title":
+            "Lactivia",
+        "slug":
+            "lactivia",
+        "color":
+            "#252f31",
+        "description":
+            "In this SHOTS sketch, we learn about the wonderful effects of Lactivia, the best yoghurt you could possibly eat. “It keeps you regular!”",
+        "writtenBy":
+            "Tiarra Sulyk",
+        "directedBy":
+            "Athena Russell, Tiarra Sulyk",
+        "starring":
+            "Tiarra Sulyk, Athena Russell",
+        "imdb":
+            "http://imdb.com/title/tt4897466/",
+        "youtube":
+            "https://youtu.be/AXyaBCNSVnU"
+    },
+    "friend-anxiety": {
+        "title":
+            "Friend Anxiety",
+        "slug":
+            "friend-anxiety",
+        "color":
+            "#3b281f",
+        "description":
+            "Today Tiarra faces the hardest struggle of her life: waiting for her friend to show up. Normally this would bring most people pleasure, but for Tiarra is only means one thing: Anxiety.",
+        "writtenBy":
+            "Tiarra Sulyk",
+        "directedBy":
+            "Athena Russell",
+        "starring":
+            "Tiarra Sulyk, Athena Russell",
+        "imdb":
+            "http://imdb.com/title/tt4973568/",
+        "youtube":
+            "https://youtu.be/mg5D1akqfJE"
+    },
+    "deadbeat-daddies": {
+        "title":
+            "Deadbeat Daddies",
+        "slug":
+            "deadbeat-daddies",
+        "color":
+            "#5d4016",
+        "description":
+            "Four young women discuss how wonderful their fathers are. So, so wonderful.",
+        "writtenBy":
+            "Tiarra Sulyk",
+        "directedBy":
+            "Athena Russell",
+        "starring":
+            "Jessica McLeod, Tiarra Sulyk, Athena Russell, Gurjot Toor",
+        "imdb":
+            "http://imdb.com/title/tt5478852/",
+        "youtube":
+            "https://youtu.be/c-Ykse_3Rv8"
+    }
+}

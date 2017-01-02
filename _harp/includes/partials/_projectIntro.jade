@@ -1,0 +1,19 @@
+section.u-context.u-gradient.u-pattern.u-padding(style='background-color:#{color};')
+
+    div.u-context.u-z1.u-measure-medium.u-padding-top.u-margin-horizontal-fill.u-flexbox.u-flex-column--small-only
+
+        div.u-margin-bottom.u-flex-shrink.u-full-width--small-only.u-margin-end--small-up
+            img.u-block.u-margin-horizontal-fill.u-box-shadow-thin(src='/assets/img/#{slug}/--poster.jpg', style='max-width:15rem;')
+
+        div.c-text-content.u-margin-bottom.u-flex.u-text-shadow-thin
+            h1.u-text-size-very-large.u-margin-bottom #{title}
+            p.u-margin-bottom #{description}
+            hr.u-margin-bottom
+            ul.u-margin-bottom
+                li #[strong Written By] — #{writtenBy}
+                li #[strong Directed By] — #{directedBy}
+                li #[strong Starring] — #{starring}
+            hr.u-margin-bottom
+            ul
+                li → #[a(href='#{imdb}') Explore on IMDb]
+                li → #[a(href='#{youtube}') Watch on YouTube]

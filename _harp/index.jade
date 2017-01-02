@@ -1,7 +1,7 @@
-include /includes/components/card
+include /includes/components/_card
 
-div.u-fixed.u-t-0.u-r-0.u-l-0.u-full-vh
-    div.u-context.u-gradient(style='height:0;padding-bottom:56.25%;background-image:url(assets/img/bg.jpg);background-size:cover;')
+section.u-position.u-t-0.u-r-0.u-l-0
+    div.u-context.c-ratio.c--16x9.u-gradient.u-bg-cover(style='background-image:url("/assets/img/bg.jpg");')
         div#muteYouTubeVideoPlayer.u-position.u-t-0.u-r-0.u-l-0.u-b-0.u-full-width.u-full-height
         script(async='', src='https://www.youtube.com/iframe_api')
         script.
@@ -31,58 +31,74 @@ div.u-fixed.u-t-0.u-r-0.u-l-0.u-full-vh
                 });
             }
 
-div.u-clip(style='padding-top:30vw;')
+section.u-clip(style='padding-top:30vw;')
 
-    +card(
-        'Tea Time With T & A',
-        'Talk Show • Comedy',
-        'assets/img/poster--tea-time-with-t-a.jpg',
-        '/tea-time-with-t-a')
+    div.u-full-width.u-half-width--small-up.u-third-width--medium-up.u-quarter-width--large-up.u-float-start.u-padding
+        +card(
+            'Tea Time With T & A',
+            'Talk Show • Comedy',
+            '/assets/img/tea-time-with-t-a/--thumb.jpg',
+            '/tea-time-with-t-a')
 
-    +card(
-        'High Five Goodbye',
-        'Short Film • Comedy',
-        'assets/img/poster--high-five-goodbye.jpg',
-        '/high-five-goodbye')
+    div.u-full-width.u-half-width--small-up.u-third-width--medium-up.u-quarter-width--large-up.u-float-start.u-padding
+        +card(
+            'High Five Goodbye',
+            'Short Film • Comedy',
+            '/assets/img/high-five-goodbye/--thumb.jpg',
+            '/high-five-goodbye')
 
-    +card(
-        'The Meltdown',
-        'Short Film • Drama/Comedy',
-        'assets/img/poster--meltdown.jpg',
-        '/meltdown')
+    div.u-full-width.u-half-width--small-up.u-third-width--medium-up.u-quarter-width--large-up.u-float-start.u-padding
+        +card(
+            'The Meltdown',
+            'Short Film • Drama/Comedy',
+            '/assets/img/meltdown/--thumb.jpg',
+            '/meltdown')
 
-    +card(
-        'Almost Actors',
-        'Series • Comedy',
-        'assets/img/poster--almost-actors.jpg',
-        '/almost-actors')
+    div.u-full-width.u-half-width--small-up.u-third-width--medium-up.u-quarter-width--large-up.u-float-start.u-padding
+        +card(
+            'Almost Actors',
+            'Series • Comedy',
+            '/assets/img/almost-actors/--thumb.jpg',
+            '/almost-actors')
 
-    +card(
-        'The Ex You Can’t Escape',
-        'Series • Comedy',
-        'assets/img/poster--ex-you-cant-escape.jpg')
+    div.u-full-width.u-half-width--small-up.u-third-width--medium-up.u-quarter-width--large-up.u-float-start.u-padding
+        +card(
+            'The Ex You Can’t Escape',
+            'Series • Comedy',
+            '/assets/img/ex-you-cant-escape/--thumb.jpg',
+            '/ex-you-cant-escape')
 
-    +card(
-        'The Condenado League',
-        'Short Film • Comedy',
-        'assets/img/poster--condenado-league.jpg')
+    div.u-full-width.u-half-width--small-up.u-third-width--medium-up.u-quarter-width--large-up.u-float-start.u-padding
+        +card(
+            'The Condenado League',
+            'Short Film • Comedy',
+            '/assets/img/condenado-league/--thumb.jpg',
+            '/condenado-league')
 
-    +card(
-        'A Blast from Our Teenage Pasts',
-        'Sketch • Comedy',
-        'assets/img/poster--blast-from-out-teenage-pasts.jpg')
+    div.u-full-width.u-half-width--small-up.u-third-width--medium-up.u-quarter-width--large-up.u-float-start.u-padding
+        +card(
+            'A Blast from Our Teenage Pasts',
+            'Sketch • Comedy',
+            '/assets/img/blast-from-our-teenage-pasts/--thumb.jpg',
+            '/blast-from-our-teenage-pasts')
 
-    +card(
-        'Friend Anxiety',
-        'Sketch • Comedy',
-        'assets/img/poster--friend-anxiety.jpg')
+    div.u-full-width.u-half-width--small-up.u-third-width--medium-up.u-quarter-width--large-up.u-float-start.u-padding
+        +card(
+            'Friend Anxiety',
+            'Sketch • Comedy',
+            '/assets/img/friend-anxiety/--thumb.jpg',
+            '/friend-anxiety')
 
-    +card(
-        'Lactivia',
-        'Sketch • Comedy',
-        'assets/img/poster--lactivia.jpg')
+    div.u-full-width.u-half-width--small-up.u-third-width--medium-up.u-quarter-width--large-up.u-float-start.u-padding
+        +card(
+            'Lactivia',
+            'Sketch • Comedy',
+            '/assets/img/lactivia/--thumb.jpg',
+            '/lactivia')
 
-    +card(
-        'Deadbeat Daddies',
-        'Sketch • Comedy',
-        'assets/img/poster--deadbeat-daddies.jpg')
+    div.u-full-width.u-half-width--small-up.u-third-width--medium-up.u-quarter-width--large-up.u-float-start.u-padding
+        +card(
+            'Deadbeat Daddies',
+            'Sketch • Comedy',
+            '/assets/img/deadbeat-daddies/--thumb.jpg',
+            '/deadbeat-daddies')

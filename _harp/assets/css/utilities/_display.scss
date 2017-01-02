@@ -41,6 +41,12 @@
     width: 100%;
 }
 
+@include --small-only {
+    .u-full-width--small-only {
+        width: 100%;
+    }
+}
+
 @include --small-up {
     .u-full-width--small-up {
         width: 100%;
