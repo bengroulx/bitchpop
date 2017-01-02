@@ -1,6 +1,8 @@
+include /includes/components/_icon
+
 header.t-header.u-position--small-up.u-t-0.u-l-0.u-r-0.u-z4.u-padding.u-bg-white.u-black.u-box-shadow-thin(role='banner')
 
-    div.u-flexbox.u-align-middle.u-padding-start.u-padding-end
+    div.u-flexbox.u-align-middle.u-padding-end
 
         div.u-flex
             a.u-block(href='/')
@@ -16,5 +18,8 @@ header.t-header.u-position--small-up.u-t-0.u-l-0.u-r-0.u-z4.u-padding.u-bg-white
                 a.u-block(href='/pitch', class="#{ current.source == 'pitch' ? 't-nav__active u-context' : '' }")
                     span.u-block.u-padding Pitch Your Concept
                 span.u-block.u-bleed-top.u-bleed-bottom.u-bleed-end.u-padding-start
-                    span.u-block.u-padding.u-bg-pink.u-white.u-bleed-end
-                        span.u-block.u-padding TW / FB
+                    span.u-block.u-padding.u-bg-pink.u-white.u-bleed-end.u-clip
+                        a.u-block.u-float-start.u-white.u-padding-top.u-padding-bottom.u-padding-start(href='https://facebook.com/B.TCHPOPproductions')
+                            +icon('facebook')
+                        a.u-block.u-float-start.u-white.u-padding(href='https://youtube.com/BitchpopProductions')
+                            +icon('youtube')

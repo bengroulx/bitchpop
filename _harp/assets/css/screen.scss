@@ -38,19 +38,16 @@
 // ---
 
 @import 'components/card';
-@import 'components/container';
 @import 'components/faux-link';
+@import 'components/icon';
 @import 'components/media';
-@import 'components/ratio';
 @import 'components/text-content';
-// @import 'components/hero';
-// @import 'components/loader';
-// @import 'components/stack';
 
 
 // Templates
 // ---
 
+@import 'templates/about';
 @import 'templates/footer';
 @import 'templates/header';
 @import 'templates/nav';

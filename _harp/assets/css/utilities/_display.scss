@@ -34,7 +34,7 @@
 }
 
 
-// Sizes
+// Full Width
 // ---
 
 .u-full-width {
@@ -144,8 +144,8 @@
 }
 
 
-
-
+// Heights
+// ---
 
 .u-full-height {
     height: 100%;
@@ -165,4 +165,12 @@
 
 .u-min-full-vh {
     min-height: 100vh;
+}
+
+
+// Ratios
+// ---
+
+.u-ratio-16x9 {
+    padding-bottom: ((9 / 16) * 100%);
 }

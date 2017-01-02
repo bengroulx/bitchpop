@@ -1,22 +1,97 @@
-// Utilities: Padding
+// Utilities: padding
 // ===
 
-.u-padding {
-    padding: $unit;
+.u-padding-horizontal-fill {
+    padding-right: auto !important;
+    padding-left: auto !important;
 }
+
+
+// Padding All
+// ---
+
+.u-padding {
+    padding: $unit !important;
+}
+
+@include --small-up {
+    .u-padding--small-up {
+        padding: $unit !important;
+    }
+}
+
+
+// Padding Top
+// ---
 
 .u-padding-top {
-    padding-top: $unit;
+    padding-top: $unit !important;
 }
+
+@include --small-up {
+    .u-padding-top--small-up {
+        padding-top: $unit !important;
+    }
+}
+
+.u-padding-top-huge {
+    padding-top: $unit*5 !important;
+}
+
+@include --small-up {
+    .u-padding-top-huge--small-up {
+        padding-top: $unit*5 !important;
+    }
+}
+
+
+// Padding Bottom
+// ---
 
 .u-padding-bottom {
-    padding-bottom: $unit;
+    padding-bottom: $unit !important;
 }
+
+@include --small-up {
+    .u-padding-bottom--small-up {
+        padding-bottom: $unit !important;
+    }
+}
+
+.u-padding-bottom-huge {
+    padding-bottom: $unit*5 !important;
+}
+
+@include --small-up {
+    .u-padding-bottom-huge--small-up {
+        padding-bottom: $unit*5 !important;
+    }
+}
+
+
+// Padding Start
+// ---
 
 .u-padding-start {
-    padding-left: $unit;
+    padding-left: $unit !important;
 }
 
+@include --small-up {
+    .u-padding-start--small-up {
+        padding-left: $unit !important;
+    }
+}
+
+
+// Padding End
+// ---
+
 .u-padding-end {
-    padding-right: $unit;
+    padding-right: $unit !important;
+}
+
+@include --small-up {
+    .u-padding-end--small-up {
+        padding-right: $unit !important;
+    }
 }

@@ -1,5 +1,7 @@
+include /includes/components/_icon
+
 footer.u-context.u-text-center.u-text-shadow-thin(role='contentinfo')
-    div.u-flexbox.u-flex-column--small-only.u-justify-around(style='margin-top:5rem;margin-bottom:3rem;')
+    div.u-flexbox.u-flex-column--small-only.u-justify-around.u-margin-top-huge(style='margin-bottom:3rem;')
         div.u-padding-start.u-padding-end.u-margin-bottom
             h5.u-margin-bottom.u-text-uppercase Discover Bitchpop
             ul.content
@@ -26,13 +28,21 @@ footer.u-context.u-text-center.u-text-shadow-thin(role='contentinfo')
             h5.u-margin-bottom.u-text-uppercase Connect
             ul.content.social.links
                 li.u-margin-bottom
-                    a(target='_blank', href='https://youtube.com/BitchpopProductions') YouTube
+                    a.u-flexbox.u-align-middle.u-justify-middle(target='_blank', href='https://youtube.com/BitchpopProductions')
+                        +icon('youtube')
+                        | YouTube
                 li.u-margin-bottom
-                    a(target='_blank', href='https://facebook.com/B.TCHPOPproductins') Facebook
+                    a.u-flexbox.u-align-middle.u-justify-middle(target='_blank', href='https://facebook.com/B.TCHPOPproductions')
+                        +icon('facebook')
+                        | Facebook
                 li.u-margin-bottom
-                    a(target='_blank', href='https://twitter.com/WatchBitchpop') Twitter
+                    a.u-flexbox.u-align-middle.u-justify-middle(target='_blank', href='https://twitter.com/WatchBitchpop')
+                        +icon('twitter')
+                        | Twitter
                 li
-                    a(target='_blank', href='https://instagram.com/BitchpopProductions') Instagram
+                    a.u-flexbox.u-align-middle.u-justify-middle(target='_blank', href='https://instagram.com/BitchpopProductions')
+                        +icon('instagram')
+                        | Instagram
     div.u-padding.u-half-transparent.u-text-size-small
         p
             | Copyright © 2015–
