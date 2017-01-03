@@ -6,9 +6,10 @@
         display: none;
     }
 
-    img {
-        width: auto;
-        max-width: none;
-        height: 2.75rem;
+    svg {
+        width: $unit * 12.5;
+        height: $unit * 3.125;
+
+        transition: all 0.25s ease-out;
     }
 }

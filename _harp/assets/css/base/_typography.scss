@@ -27,6 +27,7 @@ blockquote {
 a {
     color: $pink;
     text-decoration: none;
+    transition: all 0.15s ease-out;
 
     &:hover {
         color: darken($pink, 10%);

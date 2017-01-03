@@ -1,5 +1,9 @@
 .t-footer {
     transform: rotate(180deg);
+
+    &::before {
+        opacity: 0.15;
+    }
 }
 
 .t-footer__inner {

@@ -6,9 +6,10 @@ header.t-header.u-context.u-position--small-up.u-t0.u-l0.u-r0.u-z4.u-bg-white.u-
 
         div.u-flex--medium-up
             div.u-flexbox--small-only.u-align-middle
-                a.t-header__logo.u-inline-block.u-padding.u-flex(href='/')
-                    h1(hidden='').u-text-size-normal Bitchpop Productions
-                    img(src='/assets/img/logo-black.png')
+                a.t-header__logo.u-inline-block.u-padding.u-flex.u-black(href='/')
+                    svg.u-inline-block
+                        use(xlink:href='#icon-bitchpop')
+                    span.u-text-clip Bitchpop Productions
                 a.u-inline-block.u-padding.u-flex-shrink.u-hide--small-up.u-text-center#js-nav-toggle(href='#')
                     +icon('menu')
                     span.u-block.u-text-size-small.u-text-uppercase(style='padding-top:0.5rem;') Menu

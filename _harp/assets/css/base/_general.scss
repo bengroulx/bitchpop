@@ -130,6 +130,11 @@ img {
     max-width: 100%;
 }
 
+svg {
+    color: inherit;
+    fill: currentColor;
+}
+
 hr {
     height: 1px;
 
@@ -143,5 +148,5 @@ table {
 }
 
 [hidden] {
-    display: none;
+    display: none !important;
 }
