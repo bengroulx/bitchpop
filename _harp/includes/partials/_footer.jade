@@ -1,55 +1,65 @@
 include /includes/components/_icon
 
-footer.u-context.u-text-center.u-text-shadow-thin(role='contentinfo')
-    div.u-flexbox.u-flex-column--small-only.u-justify-around.u-margin-top-huge(style='margin-bottom:3rem;')
-        div.u-padding-start.u-padding-end.u-margin-bottom
-            h5.u-margin-bottom.u-text-uppercase Discover Bitchpop
-            ul.content
-                li.u-margin-bottom
-                    a(href='/') Home
-                li.u-margin-bottom
-                    a(href='/about') What Is Bitchpop?
-                li.u-margin-bottom
-                    a(href='/press') In The Press
-                li
-                    a(href='/pitch') Pitch Your Concept
-        div.u-padding-start.u-padding-end.u-margin-bottom
-            h5.u-margin-bottom.u-text-uppercase Get in touch
-            ul.content
-                li.u-margin-bottom
-                    a(href='mailto:hello@bitchpopproductions.com') hello@bitchpopproductions.com
-                li.u-margin-bottom.u-half-transparent —
-                li
-                    a(href='https://goo.gl/maps/kpQHm')
-                        address
-                            span.u-block.u-margin-bottom 1068 Hornby Street
-                            span Vancouver, Canada
-        div.u-padding-start.u-padding-end.u-margin-bottom
-            h5.u-margin-bottom.u-text-uppercase Connect
-            ul.content.social.links
-                li.u-margin-bottom
-                    a.u-flexbox.u-align-middle.u-justify-middle(target='_blank', href='https://youtube.com/BitchpopProductions')
-                        +icon('youtube')
-                        | YouTube
-                li.u-margin-bottom
-                    a.u-flexbox.u-align-middle.u-justify-middle(target='_blank', href='https://facebook.com/B.TCHPOPproductions')
-                        +icon('facebook')
-                        | Facebook
-                li.u-margin-bottom
-                    a.u-flexbox.u-align-middle.u-justify-middle(target='_blank', href='https://twitter.com/WatchBitchpop')
-                        +icon('twitter')
-                        | Twitter
-                li
-                    a.u-flexbox.u-align-middle.u-justify-middle(target='_blank', href='https://instagram.com/BitchpopProductions')
-                        +icon('instagram')
-                        | Instagram
-    div.u-padding.u-half-transparent.u-text-size-small
-        p
-            | Copyright © 2015–
-            script document.write(new Date().getFullYear()) 
-            |  Bitchpop Productions. All Rights Reserved. 
-            a(href='https://house-house.design', target='_blank') Site by House House Design
-            | .
+footer.t-footer.u-context.u-pattern.u-gradient.u-text-center.u-text-shadow-thin(role='contentinfo')
 
-a.u-context.u-block.u-margin-top.u-padding.u-black.u-text-size-small.u-text-center(style='background:yellow;', href='mailto:hello@bitchpopproductions.com')
+    div.t-footer__inner.u-context.u-z2
+
+            div.u-flexbox.u-flex-column--small-only.u-justify-around.u-padding-top-huge(style='margin-bottom:2rem;')
+                div.u-padding-start.u-padding-end.u-margin-bottom
+                    h5.u-margin-bottom.u-text-uppercase Discover Bitchpop
+                    ul.content
+                        li.u-margin-bottom
+                            a(href='/') Home
+                        li.u-margin-bottom
+                            a(href='/about') What Is Bitchpop?
+                        li.u-margin-bottom
+                            a(href='/press') In The Press
+                        li
+                            a(href='/pitch') Pitch Your Concept
+                div.u-padding-start.u-padding-end.u-margin-bottom
+                    h5.u-margin-bottom.u-text-uppercase Get in touch
+                    ul.content
+                        li.u-margin-bottom
+                            a(href='mailto:hello@bitchpopproductions.com') hello@bitchpopproductions.com
+                        li.u-margin-bottom.u-half-transparent —
+                        li
+                            a(href='https://goo.gl/maps/kpQHm')
+                                address
+                                    span.u-block.u-margin-bottom 1068 Hornby Street
+                                    span Vancouver, Canada
+                div.u-padding-start.u-padding-end.u-margin-bottom
+                    h5.u-margin-bottom.u-text-uppercase Connect
+                    ul.content.social.links
+                        li.u-margin-bottom
+                            a.u-flexbox.u-align-middle.u-justify-middle(target='_blank', href='https://youtube.com/BitchpopProductions')
+                                +icon('youtube')
+                                | YouTube
+                        li.u-margin-bottom
+                            a.u-flexbox.u-align-middle.u-justify-middle(target='_blank', href='https://facebook.com/B.TCHPOPproductions')
+                                +icon('facebook')
+                                | Facebook
+                        li.u-margin-bottom
+                            a.u-flexbox.u-align-middle.u-justify-middle(target='_blank', href='https://twitter.com/WatchBitchpop')
+                                +icon('twitter')
+                                | Twitter
+                        li
+                            a.u-flexbox.u-align-middle.u-justify-middle(target='_blank', href='https://instagram.com/BitchpopProductions')
+                                +icon('instagram')
+                                | Instagram
+            div.u-padding.u-half-transparent.u-text-size-small
+                p
+                    | Copyright © 2015–
+                    script document.write(new Date().getFullYear()) 
+                    |  Bitchpop Productions. All Rights Reserved. 
+                    a(href='https://house-house.design', target='_blank') Site by House House Design
+                    | .
+
+a.u-context.u-block.u-margin-top.u-padding.u-bg-pink.u-white.u-text-size-small.u-text-center(href='mailto:hello@bitchpopproductions.com')
     | This site is still in development; If something looks wrong or broken, please let us know →
+
+
+
+script.
+    document.getElementById('js-nav-toggle').onclick = function(){
+        document.getElementsByClassName('t-nav')[0].classList.toggle("t--open");
+    }

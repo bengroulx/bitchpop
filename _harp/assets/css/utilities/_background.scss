@@ -3,21 +3,55 @@
 
 .u-bg-black {
     background-color: $black;
+
+    @include --small-up {
+        &--small-up {
+            background-color: $black;
+        }
+    }
+
+    @include --large-up {
+        &--large-up {
+            background-color: $black;
+        }
+    }
 }
 
 .u-bg-white {
     background-color: $white;
+
+    @include --small-up {
+        &--small-up {
+            background-color: $white;
+        }
+    }
+
+    @include --large-up {
+        &--large-up {
+            background-color: $white;
+        }
+    }
 }
 
 .u-bg-pink {
     background-color: $pink;
-}
 
-@include --small-up {
-    .u-bg-pink--small-up {
-        background-color: $pink;
+    @include --small-up {
+        &--small-up {
+            background-color: $pink;
+        }
+    }
+
+    @include --large-up {
+        &--large-up {
+            background-color: $pink;
+        }
     }
 }
+
+
+// Background Attributes
+// ---
 
 .u-bg-center {
     background-position: center;

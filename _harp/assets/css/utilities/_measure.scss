@@ -1,14 +1,54 @@
 // Utilities: Measure
 // ===
 
+$measure-narrow: calc(#{$content-area-narrow} - #{$unit * 10});
+$measure-medium: calc(#{$content-area-medium} - #{$unit * 10});
+$measure-wide:   calc(#{$content-area-wide} - #{$unit * 10});
+
 .u-measure-narrow {
-    max-width: calc(#{$content-area-narrow} - #{$unit * 10});
+    max-width: $measure-narrow;
+
+    @include --small-up {
+        &--small-up {
+            max-width: $measure-narrow;
+        }
+    }
+
+    @include --large-up {
+        &--medium-up {
+            max-width: $measure-narrow !important;
+        }
+    }
 }
 
 .u-measure-medium {
-    max-width: calc(#{$content-area-medium} - #{$unit * 10});
+    max-width: $measure-medium;
+
+    @include --small-up {
+        &--small-up {
+            max-width: $measure-medium;
+        }
+    }
+
+    @include --large-up {
+        &--large-up {
+            max-width: $measure-medium !important;
+        }
+    }
 }
 
 .u-measure-wide {
-    max-width: calc(#{$content-area-wide} - #{$unit * 10});
+    max-width: $measure-wide;
+
+    @include --small-up {
+        &--small-up {
+            max-width: $measure-wide;
+        }
+    }
+
+    @include --large-up {
+        &--medium-up {
+            max-width: $measure-wide !important;
+        }
+    }
 }

@@ -86,11 +86,16 @@
     text-shadow: 0 0.1em 0.15em rgba($black, 0.5);
 }
 
+
 // Text Clipping
 // ---
 
 .u-text-clip {
+    position: absolute;
+
     overflow: hidden;
+    width: 1px;
+    height: 1px;
 
     color: transparent;
     white-space: nowrap;

@@ -1,12 +1,14 @@
 // Header
 // ===
 
-.t-header {
-    opacity: 0.975;
-}
+.t-header__logo {
+    @include --medium-only {
+        display: none;
+    }
 
-@supports (backdrop-filter: blur(10px)) {
-    .example {
-        backdrop-filter: blur(10px);
+    img {
+        width: auto;
+        max-width: none;
+        height: 2.75rem;
     }
 }

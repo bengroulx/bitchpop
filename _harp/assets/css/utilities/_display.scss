@@ -7,25 +7,49 @@
 
 .u-block {
     display: block;
+
+    @include --small-only {
+        &--small-only {
+            display: block;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            display: block;
+        }
+    }
 }
 
 .u-inline-block {
     display: inline-block;
+
+    @include --small-only {
+        &--small-only {
+            display: inline-block;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            display: inline-block;
+        }
+    }
 }
 
 .u-hide {
     display: none;
-}
 
-@include --small-only {
-    .u-hide--small-only {
-        display: none;
+    @include --small-only {
+        &--small-only {
+            display: none;
+        }
     }
-}
 
-@include --small-up {
-    .u-hide--small-up {
-        display: none;
+    @include --small-up {
+        &--small-up {
+            display: none;
+        }
     }
 }
 
@@ -39,29 +63,29 @@
 
 .u-full-width {
     width: 100%;
-}
 
-@include --small-only {
-    .u-full-width--small-only {
-        width: 100%;
+    @include --small-only {
+        &--small-only {
+            width: 100%;
+        }
     }
-}
 
-@include --small-up {
-    .u-full-width--small-up {
-        width: 100%;
+    @include --small-up {
+        &--small-up {
+            width: 100%;
+        }
     }
-}
 
-@include --medium-up {
-    .u-full-width--small-up {
-        width: 100%;
+    @include --medium-up {
+        &--medium-up {
+            width: 100%;
+        }
     }
-}
 
-@include --large-up {
-    .u-full-width--large-up {
-        width: 100%;
+    @include --large-up {
+        &--large-up {
+            width: 100%;
+        }
     }
 }
 
@@ -71,23 +95,23 @@
 
 .u-half-width {
     width: 50%;
-}
 
-@include --small-up {
-    .u-half-width--small-up {
-        width: 50%;
+    @include --small-up {
+        &--small-up {
+            width: 50%;
+        }
     }
-}
 
-@include --medium-up {
-    .u-half-width--medium-up {
-        width: 50%;
+    @include --medium-up {
+        &--medium-up {
+            width: 50%;
+        }
     }
-}
 
-@include --large-up {
-    .u-half-width--large-up {
-        width: 50%;
+    @include --large-up {
+        &--large-up {
+            width: 50%;
+        }
     }
 }
 
@@ -97,23 +121,23 @@
 
 .u-third-width {
     width: 33.33%;
-}
 
-@include --small-up {
-    .u-third-width--small-up {
-        width: 33.33%;
+    @include --small-up {
+        &--small-up {
+            width: 33.33%;
+        }
     }
-}
 
-@include --medium-up {
-    .u-third-width--medium-up {
-        width: 33.33%;
+    @include --medium-up {
+        &--medium-up {
+            width: 33.33%;
+        }
     }
-}
 
-@include --large-up {
-    .u-third-width--large-up {
-        width: 33.33%;
+    @include --large-up {
+        &--large-up {
+            width: 33.33%;
+        }
     }
 }
 
@@ -123,23 +147,23 @@
 
 .u-quarter-width {
     width: 25%;
-}
 
-@include --small-up {
-    .u-quarter-width--small-up {
-        width: 25%;
+    @include --small-up {
+        &--small-up {
+            width: 25%;
+        }
     }
-}
 
-@include --medium-up {
-    .u-quarter-width--medium-up {
-        width: 25%;
+    @include --medium-up {
+        &--medium-up {
+            width: 25%;
+        }
     }
-}
 
-@include --large-up {
-    .u-quarter-width--large-up {
-        width: 25%;
+    @include --large-up {
+        &--large-up {
+            width: 25%;
+        }
     }
 }
 

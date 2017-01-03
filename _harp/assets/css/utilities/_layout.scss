@@ -3,27 +3,52 @@
 
 .u-context {
     position: relative;
+
+    @include --small-up {
+        &--small-up {
+            position: relative !important;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            position: relative !important;
+        }
+    }
 }
 
 .u-position {
     position: absolute;
-}
 
-@include --small-up {
-    .u-position--small-up {
-        position: absolute !important;
+    @include --small-up {
+        &--small-up {
+            position: absolute !important;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            position: absolute !important;
+        }
+    }
+
+    @include --large-up {
+        &--large-up {
+            position: absolute !important;
+        }
     }
 }
 
 .u-fixed {
     position: fixed;
-}
 
-@include --small-up {
-    .u-fixed--small-up {
-        position: fixed !important;
+    @include --small-up {
+        &--small-up {
+            position: fixed !important;
+        }
     }
 }
+
 
 // Floating
 // ---
@@ -42,14 +67,23 @@
 
 .u-center {
     @extend %x-center;
-}
 
-@include --small-up {
-    .u-center--small-up {
-        top: 50%;
-        left: 50%;
+    @include --small-up {
+        &--small-up {
+            top: 50%;
+            left: 50%;
 
-        transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    @include --large-up {
+        &--large-up {
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
     }
 }
 

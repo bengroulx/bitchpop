@@ -12,3 +12,17 @@
 .u-border-pink {
     border: 1px solid $pink;
 }
+
+
+// Specific Borders
+// ===
+
+.u-border-grey-top {
+    border-top: 1px solid rgba($black, 0.05);
+
+    @include --small-only {
+        &--small-only {
+            border-top: 1px solid rgba($black, 0.05);
+        }
+    }
+}

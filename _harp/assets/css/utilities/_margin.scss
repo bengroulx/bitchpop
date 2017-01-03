@@ -1,87 +1,78 @@
 // Utilities: margin
 // ===
 
-.u-margin-horizontal-fill {
-    margin-right: auto !important;
-    margin-left: auto !important;
-}
-
-
-// Margin All
-// ---
-
 .u-margin {
     margin: $unit !important;
-}
 
-@include --small-up {
-    .u-margin--small-up {
-        margin: $unit !important;
+    @include --small-up {
+        &--small-up {
+            margin: $unit !important;
+        }
     }
-}
 
-
-// Margin Top
-// ---
-
-.u-margin-top {
-    margin-top: $unit !important;
-}
-
-@include --small-up {
-    .u-margin-top--small-up {
+    &-top {
         margin-top: $unit !important;
+
+        @include --small-up {
+            &--small-up {
+                margin-top: $unit !important;
+            }
+        }
+
+        &-huge {
+            margin-top: $unit*5 !important;
+
+            @include --small-up {
+                &--small-up {
+                    margin-top: $unit*5 !important;
+                }
+            }
+        }
     }
-}
 
-.u-margin-top-huge {
-    margin-top: $unit*5 !important;
-}
-
-@include --small-up {
-    .u-margin-top-huge--small-up {
-        margin-top: $unit*5 !important;
-    }
-}
-
-
-// Margin Bottom
-// ---
-
-.u-margin-bottom {
-    margin-bottom: $unit !important;
-}
-
-@include --small-up {
-    .u-margin-bottom--small-up {
+    &-bottom {
         margin-bottom: $unit !important;
+
+        @include --small-up {
+            &--small-up {
+                margin-bottom: $unit !important;
+            }
+        }
+
+        &-huge {
+            margin-bottom: $unit*5 !important;
+
+            @include --small-up {
+                &--small-up {
+                    margin-bottom: $unit*5 !important;
+                }
+            }
+        }
+
     }
-}
 
-
-// Margin Start
-// ---
-
-.u-margin-start {
-    margin-left: $unit !important;
-}
-
-@include --small-up {
-    .u-margin-start--small-up {
+    &-start {
         margin-left: $unit !important;
+
+        @include --small-up {
+            &--small-up {
+                margin-left: $unit !important;
+            }
+        }
     }
-}
 
-
-// Margin End
-// ---
-
-.u-margin-end {
-    margin-right: $unit !important;
-}
-
-@include --small-up {
-    .u-margin-end--small-up {
+    &-end {
         margin-right: $unit !important;
+
+        @include --small-up {
+            &--small-up {
+                margin-right: $unit !important;
+            }
+        }
+    }
+
+    &-horizontal-fill {
+        margin-right: auto !important;
+        margin-left: auto !important;
     }
 }

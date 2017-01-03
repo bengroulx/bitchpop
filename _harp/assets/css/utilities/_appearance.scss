@@ -45,20 +45,46 @@
 // Bleed
 // --
 
-.u-bleed-top {
-    margin-top: -$unit;
-}
+.u-bleed {
+    &-top {
+        margin-top: -$unit;
 
-.u-bleed-bottom {
-    margin-bottom: -$unit;
-}
+        @include --small-up {
+            &--small-up {
+                margin-top: -$unit;
+            }
+        }
+    }
 
-.u-bleed-start {
-    margin-left: -$unit;
-}
+    &-bottom {
+        margin-bottom: -$unit;
 
-.u-bleed-end {
-    margin-right: -$unit;
+        @include --small-up {
+            &--small-up {
+                margin-bottom: -$unit;
+            }
+        }
+    }
+
+    &-start {
+        margin-left: -$unit;
+
+        @include --small-up {
+            &--small-up {
+                margin-left: -$unit;
+            }
+        }
+    }
+
+    &-end {
+        margin-right: -$unit;
+
+        @include --small-up {
+            &--small-up {
+                margin-right: -$unit;
+            }
+        }
+    }
 }
 
 

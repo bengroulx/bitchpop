@@ -1,13 +1,32 @@
 // Navigation
 // ===
 
+.t-nav {
+    @include --small-only {
+        max-height: 0;
+
+        transition: all ease-out 0.5s;
+
+        &.t--open {
+            max-height: 100vh;
+        }
+    }
+}
+
 .t-nav__active {
     &::after {
+        @include --small-up {
+            top: 100%;
+            left: 50%;
+
+            transform: translate(-50%, -100%);
+        }
+
         content: '';
 
         position: absolute;
-        bottom: -($unit / 1.5);
-        left: 50%;
+        top: 50%;
+        left: 100%;
 
         display: block;
         width: $unit;
@@ -16,6 +35,6 @@
         background: url('../img/arrow-colored.svg') no-repeat center center;
         background-size: 100%;
 
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) rotate(-90deg);
     }
 }

@@ -1,25 +1,39 @@
 include /includes/components/_icon
 
-header.t-header.u-position--small-up.u-t0.u-l0.u-r0.u-z4.u-padding.u-bg-white.u-black.u-box-shadow-thin(role='banner')
+header.t-header.u-context.u-position--small-up.u-t0.u-l0.u-r0.u-z4.u-bg-white.u-box-shadow-thin.u-clip(role='banner')
 
-    div.u-flexbox.u-align-middle.u-padding-end
+    div.u-flexbox--medium-up.u-align-middle
 
-        div.u-flex
-            a.u-block(href='/')
-                h1(hidden='').u-text-size-normal Bitchpop Productions
-                img(src='/assets/img/logo-black.png', style='width:10em;')
+        div.u-flex--medium-up
+            div.u-flexbox--small-only.u-align-middle
+                a.t-header__logo.u-inline-block.u-padding.u-flex(href='/')
+                    h1(hidden='').u-text-size-normal Bitchpop Productions
+                    img(src='/assets/img/logo-black.png')
+                a.u-inline-block.u-padding.u-flex-shrink.u-hide--small-up.u-text-center#js-nav-toggle(href='#')
+                    +icon('menu')
+                    span.u-block.u-text-size-small.u-text-uppercase(style='padding-top:0.5rem;') Menu
 
-        div.u-flex-shrink.u-hide--small-only
-            nav.c-nav.u-flexbox(role='navigation')
-                a.u-block(href='/about', class="#{ current.source == 'about' ? 't-nav__active u-context' : '' }")
-                    span.u-block.u-padding What Is Bitchpop?
-                a.u-block(href='/press', class="#{ current.source == 'press' ? 't-nav__active u-context' : '' }")
-                    span.u-block.u-padding In The Press
-                a.u-block(href='/pitch', class="#{ current.source == 'pitch' ? 't-nav__active u-context' : '' }")
-                    span.u-block.u-padding Pitch Your Concept
-                span.u-block.u-bleed-top.u-bleed-bottom.u-bleed-end.u-padding-start
-                    span.u-block.u-padding.u-bg-pink.u-white.u-bleed-end.u-clip
-                        a.u-block.u-float-start.u-white.u-padding-top.u-padding-bottom.u-padding-start(href='https://facebook.com/B.TCHPOPproductions')
+        div.u-flex-shrink--small-up
+            nav.t-nav.u-flexbox--small-up.u-align-middle.u-justify-between(role='navigation')
+                a.u-block.u-border-grey-top--small-only.u-text-center.u-hide--small-up(href='/about')
+                    span.u-inline-block.u-padding(class="#{ current.source == '/' ? 't-nav__active u-context' : '' }")
+                        | Home
+                a.u-block.u-border-grey-top--small-only.u-text-center(href='/about')
+                    span.u-inline-block.u-padding(class="#{ current.source == 'about' ? 't-nav__active u-context' : '' }")
+                        | What Is Bitchpop?
+                a.u-block.u-border-grey-top--small-only.u-text-center(href='/press')
+                    span.u-inline-block.u-padding(class="#{ current.source == 'press' ? 't-nav__active u-context' : '' }") 
+                        | In The Press
+                a.u-block.u-border-grey-top--small-only.u-text-center(href='/pitch')
+                    span.u-inline-block.u-padding(class="#{ current.source == 'pitch' ? 't-nav__active u-context' : '' }")
+                        | Pitch Your Concept
+                div.t-nav__social.u-bleed-top--small-up.u-bleed-bottom--small-up.u-padding-start--small-up
+                    span.u-flexbox.u-padding--small-up.u-bg-pink.u-white.u-clip
+                        a.u-block._u-float-start.u-white.u-padding(href='https://facebook.com/B.TCHPOPproductions')
                             +icon('facebook')
-                        a.u-block.u-float-start.u-white.u-padding(href='https://youtube.com/BitchpopProductions')
+                        a.u-block._u-float-start.u-white.u-padding(href='https://youtube.com/BitchpopProductions')
                             +icon('youtube')
+                        a.u-block._u-float-start.u-white.u-padding.u-hide--small-up(href='https://youtube.com/BitchpopProductions')
+                            +icon('twitter')
+                        a.u-block._u-float-start.u-white.u-padding.u-hide--small-up(href='https://youtube.com/BitchpopProductions')
+                            +icon('instagram')
