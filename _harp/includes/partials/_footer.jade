@@ -33,21 +33,21 @@ footer.t-footer.u-context.u-pattern.u-gradient.u-text-center.u-text-shadow-thin(
                         li.u-margin-bottom
                             a.u-flexbox.u-align-middle.u-justify-middle(target='_blank', href='https://youtube.com/BitchpopProductions')
                                 +icon('youtube')
-                                | YouTube
+                                span.u-inline-block.u-padding-start YouTube
                         li.u-margin-bottom
                             a.u-flexbox.u-align-middle.u-justify-middle(target='_blank', href='https://facebook.com/B.TCHPOPproductions')
                                 +icon('facebook')
-                                | Facebook
+                                span.u-inline-block.u-padding-start Facebook
                         li.u-margin-bottom
                             a.u-flexbox.u-align-middle.u-justify-middle(target='_blank', href='https://twitter.com/WatchBitchpop')
                                 +icon('twitter')
-                                | Twitter
+                                span.u-inline-block.u-padding-start Twitter
                         li
                             a.u-flexbox.u-align-middle.u-justify-middle(target='_blank', href='https://instagram.com/BitchpopProductions')
                                 +icon('instagram')
-                                | Instagram
+                                span.u-inline-block.u-padding-start Instagram
 
-            div.u-padding.u-half-transparent.u-text-size-small
+            div.u-padding.u-slightly-transparent.u-text-size-small
                 p
                     | Copyright © 2015–
                     script document.write(new Date().getFullYear()) 
@@ -55,12 +55,10 @@ footer.t-footer.u-context.u-pattern.u-gradient.u-text-center.u-text-shadow-thin(
                     a(href='http://house-house.design', target='_blank') Site by House House Design
                     | .
 
-a.u-context.u-block.u-margin-top.u-padding.u-bg-pink.u-white.u-text-size-small.u-text-center(href='mailto:hello@bitchpopproductions.com', hidden='')
+a.u-block.u-margin-top.u-padding.u-bg-white.u-black.u-text-center(href='mailto:hello@bitchpopproductions.com')
     | This site is still in development; If something looks wrong or broken, please let us know →
-
-
 
 script.
     document.getElementById('js-nav-toggle').onclick = function(){
-        document.getElementsByClassName('t-nav')[0].classList.toggle("t--open");
+        document.getElementsByClassName('t-nav')[0].classList.toggle('t--open');
     }

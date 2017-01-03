@@ -1,0 +1,30 @@
+include ../../includes/components/_icon
+
+nav.t-nav.u-flexbox--small-up.u-align-middle.u-justify-between(role='navigation')
+    
+    a.u-block.u-border-grey-top--small-only.u-hide--medium-only(href='/')
+        span.u-inline-block.u-padding.u-text-center(class="#{ current.source == 'index' ? 't-nav__active u-context' : '' }")
+            | Home
+
+    a.u-block.u-border-grey-top--small-only(href='/about')
+        span.u-inline-block.u-padding.u-text-center(class="#{ current.source == 'about' ? 't-nav__active u-context' : '' }")
+            | What Is Bitchpop?
+
+    a.u-block.u-border-grey-top--small-only(href='/press')
+        span.u-inline-block.u-padding.u-text-center(class="#{ current.source == 'press' ? 't-nav__active u-context' : '' }") 
+            | In The Press
+
+    a.u-block.u-border-grey-top--small-only(href='/pitch')
+        span.u-inline-block.u-padding.u-text-center(class="#{ current.source == 'pitch' ? 't-nav__active u-context' : '' }")
+            | Pitch Your Concept
+
+    div.t-nav__social.u-bleed-top--small-up.u-bleed-bottom--small-up.u-padding-start--small-up
+        span.u-flexbox.u-justify-between.u-padding--small-up.u-bg-pink.u-white.u-clip
+            a.u-block._u-float-start.u-white.u-padding(href='https://facebook.com/B.TCHPOPproductions')
+                +icon('facebook')
+            a.u-block._u-float-start.u-white.u-padding(href='https://youtube.com/BitchpopProductions')
+                +icon('youtube')
+            a.u-block._u-float-start.u-white.u-padding.u-hide--medium-only(href='https://twitter.com/WatchBitchpop')
+                +icon('twitter')
+            a.u-block._u-float-start.u-white.u-padding.u-hide--medium-only(href='https://instagram.com/BitchpopProductions')
+                +icon('instagram')
