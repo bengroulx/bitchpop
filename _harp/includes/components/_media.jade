@@ -13,8 +13,8 @@ mixin media(image, title, date, number, description, link)
                 h4.u-text-size-normal.u-half-transparent
                     span.u-inline-block.u-padding-end #{number}
                     span.u-inline-block.u-padding-end •
-                    time.u-inline-block(datetime='#{date}' itemprop='datePublished') #{date}
+                    time.u-inline-block(datetime='#{date}') #{date}
                 p #{description}
 
-        div.u-position.u-t0.u-r0.u-l0.u-b0.u-z1.u-half-transparent(aria-hidden='true', tabindex='-1', role='decorative')
-            div.u-blur.u-full-width.u-full-height.u-bg-cover.u-bg-center(style='background-image:url(/assets/img/#{slug}/#{image});transform:scale(1.1)')
+        div.u-position.u-t0.u-r0.u-l0.u-b0.u-z1.u-half-transparent(aria-hidden='true', tabindex='-1', role='presentation')
+            div.u-blur.u-full-width.u-full-height.u-bg-cover.u-bg-center(style='background-image:url("/assets/img/#{slug}/#{image}");transform:scale(1.1)')
