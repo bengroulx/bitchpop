@@ -20,7 +20,7 @@ footer.t-footer.u-context.u-pattern.u-gradient.u-text-center.u-text-shadow-thin
                     h5.u-margin-bottom.u-text-uppercase Get in touch
                     ul.u-padding-top
                         li.u-margin-bottom
-                            a(href='mailto:hello@bitchpopproductions.com') hello@bitchpopproductions.com
+                            a(href='mailto:hello@bitchpopproductions.com') &#104;&#101;&#108;&#108;&#111;&#64;&#98;&#105;&#116;&#99;&#104;&#112;&#111;&#112;&#112;&#114;&#111;&#100;&#117;&#99;&#116;&#105;&#111;&#110;&#115;&#46;&#99;&#111;&#109;
                         li.u-margin-bottom.u-half-transparent —
                         li
                             a(href='https://goo.gl/maps/kpQHm')
@@ -47,18 +47,18 @@ footer.t-footer.u-context.u-pattern.u-gradient.u-text-center.u-text-shadow-thin
                                 +icon('instagram')
                                 span.u-inline-block.u-padding-start Instagram
 
-            div.u-padding.u-slightly-transparent.u-text-size-small
+            div.u-padding.u-slightly-transparent.u-text-size-small.c-text-content
                 p
                     | Copyright © 2015–
                     script document.write(new Date().getFullYear()) 
                     |  Bitchpop Productions. All Rights Reserved. 
-                    a(href='http://house-house.design', target='_blank') Site by House House Design
+                    a(href='http://house-house.design', target='_blank', style='white-space:nowrap;') Site by House House Design
                     | .
 
-a.u-block.u-margin-top.u-padding.u-bg-white.u-black.u-text-center(href='mailto:hello@bitchpopproductions.com')
-    | This site is still in development; If something looks wrong or broken, please let us know →
-
+// Responsive Navigation
 script.
-    document.getElementById('js-nav-toggle').onclick = function(){
-        document.getElementsByClassName('t-nav')[0].classList.toggle('t--open');
-    }
+    document.getElementById('js-nav-toggle').onclick = function(){document.getElementsByClassName('t-nav')[0].classList.toggle('t--open');}
+
+// Google Analytics
+script.
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-60317812-1', 'auto');ga('send', 'pageview');
