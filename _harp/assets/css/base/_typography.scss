@@ -25,11 +25,16 @@ blockquote {
 }
 
 a {
+    box-shadow: 0 0 0 currentColor;
+
     color: $pink;
     text-decoration: none;
-    transition: all 0.15s ease-out;
+
+    transition: all 0.125s ease-out;
 
     &:hover {
+        box-shadow: 0 ($unit/4) 0 currentColor;
+
         color: darken($pink, 10%);
     }
 }

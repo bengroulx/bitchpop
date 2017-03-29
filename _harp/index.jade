@@ -3,10 +3,10 @@ include /includes/components/_card
 section
     h1.u-text-clip #{description}
     div.u-context.u-pattern.u-gradient.u-bg-cover.u-ratio-16x9(style='background-image:url("/assets/img/bg.jpg");')
-        div#muteYouTubeVideoPlayer.u-position.u-t0.u-r0.u-l0.u-b0.u-full-width.u-full-height
-        script(async='', defer='defer', src='https://www.youtube.com/iframe_api')
-        script.
-            function onYouTubeIframeAPIReady(){var a;a=new YT.Player("muteYouTubeVideoPlayer",{videoId:"T1nAFmd5iQA",width:640,height:360,playerVars:{autoplay:1,controls:0,showinfo:0,modestbranding:1,loop:1,fs:0,cc_load_policy:0,iv_load_policy:3,autohide:1,playlist:"T1nAFmd5iQA"},events:{onReady:function(a){a.target.mute()}}})}
+        video.u-position.u-t0.u-l0.u-r0.u-full-width(playsinline, autoplay, muted, loop, poster='assets/img/bg.jpg')
+            source(src='assets/videos/bitchpop.webm', type='video/webm')
+            source(src='assets/videos/bitchpop.mp4', type='video/mp4')
+            track(kind='captions', default)
 
 section.u-clip.t-home__media
     h2.u-text-clip Watch comedy and film from the women at Bitchpop Productions

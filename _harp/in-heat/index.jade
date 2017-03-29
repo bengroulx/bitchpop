@@ -1,31 +1,12 @@
 include /includes/components/_media
 
-section.u-context.u-gradient.u-pattern.u-padding-top.u-padding-top-huge--small-up.u-padding-start.u-padding-end.u-padding-bottom(style='background-color:#{color};')
+!= partial('../includes/partials/_projectIntro')
 
-    div.u-context.u-z1.u-padding-top.u-measure-medium.u-margin-horizontal-fill
-
-        div.u-padding-top--small-up.u-flexbox.u-flex-column--small-only
-            div.u-margin-bottom.u-flex-shrink.u-full-width--small-only.u-margin-end--small-up
-                img.u-block.u-margin-horizontal-fill.u-box-shadow-thin(src='/assets/img/#{slug}/--poster.jpg', style='max-width:15rem;border:4px solid white;', alt='#{title}')
-
-            div.c-text-content.u-margin-bottom.u-flex.u-text-shadow-thin
-                h1.u-text-size-very-large.u-margin-bottom #{title}
-                p.u-margin-bottom #{description}
-                hr.u-margin-bottom
-                ul.u-margin-bottom
-                    li #[strong Written By] — #{writtenBy}
-                    li #[strong Directed By] — #{directedBy}
-                    li #[strong Starring] — #{starring}
-                hr.u-margin-bottom
-                ul
-                    li → #[a(href='#{imdb}') Explore on IMDb]
-
-//
-    section
+section
     +media(
-        'i-dunno-probably.jpg', 
+        'in-heat.jpg', 
         '', 
-        'Coming Soon', 
-        'Sketch', 
+        '24 Mar 2017', 
+        'Short FIlm', 
         '',
-        'XXXX')
+        'https://youtu.be/fdoQ5urqFDg')
